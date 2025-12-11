@@ -8,9 +8,32 @@ Modern hospitals produce vast quantities of medical images (MRI, CT, ultrasound,
 
 ---
 
+## Installation and Setup
+
+This project requires Python packages listed in `requirements.txt` and, optionally, a full conda environment via `environment.yml` for GPU/ROCm support.
+
+### Using pip
+
+1. using conda - Recommended:
+
+```bash
+
+pip update
+pip install --upgrade pip
+
+conda env create -f environment.yml
+conda activate rocm
+
+pip install -r requirements.txt
+
+```
+
+---
+
 ## 📚 Table of Contents
 
 - [Overview](#-overview)
+- [Install requirements](#-requirements)
 - [Context](#-context)
 - [State of the Art](#-state-of-the-art)
 - [Project Objective](#-project-objective)
