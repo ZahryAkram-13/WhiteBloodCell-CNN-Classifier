@@ -9,6 +9,7 @@ ROOT_PATH = get_root_path()
 DATA_DIR = ROOT_PATH / "data"
 NOTEBOOKS_DIR = ROOT_PATH / "notebooks"
 SRC_DIR = ROOT_PATH / "src"
+BEST_MODEL_DIR = SRC_DIR / "best_model"
 
 RAW_DATA = DATA_DIR / "raw"
 

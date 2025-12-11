@@ -12,9 +12,7 @@ Modern hospitals produce vast quantities of medical images (MRI, CT, ultrasound,
 
 This project requires Python packages listed in `requirements.txt` and, optionally, a full conda environment via `environment.yml` for GPU/ROCm support.
 
-### Using pip
-
-1. using conda - Recommended:
+### Using conda - Recommended:
 
 ```bash
 
@@ -139,7 +137,7 @@ GoogleNet (Inception v1) was chosen for:
 
 The model training strategy follows these steps:
 
-1. Load GoogleNet with ImageNet weights  
+1. Load GoogleNet with ImageNet weights 
 2. Freeze the initial convolutional layers  
 3. Unfreeze the upper layers for specialization  
 4. Replace the final fully connected layer with a 5-class head  

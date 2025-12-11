@@ -13,6 +13,7 @@ from loguru import logger
 
 from data.data_augmentation_transforms import ImageData
 from data.utils import DATA_TRAIN_PATH, DATA_TESTA_PATH
+from paths import BEST_MODEL_DIR
 
 
 class EarlyStopping:
@@ -144,6 +145,7 @@ class CellClassifier(nn.Module):
 
         for epoch in range(epochs):
             logger.debug(f"\nEpoch {epoch+1}/{epochs}")
+            torch.cuda.empty_cache()
 
             train_loss, train_acc = self.train_one_epoch(
                 train_loader, optimizer, criterion
@@ -175,6 +177,9 @@ class CellClassifier(nn.Module):
                 early_stopping.step(val_loss)
                 if early_stopping.should_stop:
                     logger.debug("Early stopping triggered")
+                    break
+
+            torch.cuda.empty_cache()
 
         return history
 
@@ -236,7 +241,7 @@ if __name__ == "__main__":
     )
     criterion = nn.CrossEntropyLoss()
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min")
-    early = EarlyStopping()
+    early = EarlyStopping(patience = 5)
 
     history = model.fit(
         train_loader,
