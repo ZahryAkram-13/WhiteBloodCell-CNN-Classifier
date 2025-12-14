@@ -8,6 +8,40 @@ Modern hospitals produce vast quantities of medical images (MRI, CT, ultrasound,
 
 ---
 
+
+## Directory and File Description
+
+- **src/**  
+  Core source code of the project.
+
+  - **demostration.py**  
+    Script used to demonstrate the usage of trained models (e.g., inference or example runs).
+
+  - **experiences.py**  
+    Contains experimental pipelines, including training, evaluation, and comparison of different configurations.
+
+  - **models.py**  
+    Defines the model architectures and related utilities.
+
+  - **plots.py**  
+    Functions for generating visualizations such as training curves and evaluation plots.
+
+  - **metrics.txt**  
+    Stores recorded evaluation metrics from experiments.
+
+
+- **model_saved/**  
+  Stores saved model weights and checkpoints after training.
+
+- **zipped_data/**  
+  Contains datasets compressed as ZIP files used for experiments.
+
+- **plot_saved/**  
+  Stores generated result visualizations (e.g., confusion matrices) saved as image files.
+
+
+---
+
 ## Installation and Setup
 
 This project leverages AMD hardware acceleration via ROCm for GPU compute. It was developed and run on a system featuring an AMD Ryzen 7 6000 series CPU and an AMD Radeon RX 6650M XT GPU. The environment is configured with PyTorch and ROCm-compatible libraries to fully utilize this AMD hardware stack for model training and inference.
@@ -34,6 +68,7 @@ pip install -r requirements.txt
 
 - [Deep Convolutional Neural Network for Big Data Medical Image Classification](#deep-convolutional-neural-network-for-big-data-medical-image-classification)
   - [📌 Overview](#-overview)
+  - [Directory and File Description](#directory-and-file-description)
   - [Installation and Setup](#installation-and-setup)
     - [Using conda - Recommended:](#using-conda---recommended)
   - [📚 Table of Contents](#-table-of-contents)
