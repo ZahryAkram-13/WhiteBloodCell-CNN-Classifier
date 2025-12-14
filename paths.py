@@ -13,6 +13,9 @@ BEST_MODEL_DIR = SRC_DIR / "best_model"
 
 RAW_DATA = DATA_DIR / "raw"
 
+MODELS_DIR = ROOT_PATH / "models_saved"
+PLOTS_DIR = ROOT_PATH / "plots_saved"
+
 def set_paths():
     for folder in (ROOT_PATH, SRC_DIR, DATA_DIR):
         folder = str(folder)

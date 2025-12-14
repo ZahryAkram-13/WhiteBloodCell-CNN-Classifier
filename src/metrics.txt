@@ -1,0 +1,339 @@
+
+
+2025-12-13 22:57:34.185 | INFO     | __main__:<module>:58 - Model loaded from /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/models_saved/best_squeezenet.pth
+2025-12-13 22:57:34.186 | INFO     | __main__:<module>:59 - Device: cuda
+2025-12-13 22:57:34.187 | INFO     | __main__:<module>:61 - Loading dataset...
+2025-12-13 22:57:34.428 | INFO     | __main__:<module>:73 - Test batches: 55
+2025-12-13 22:57:34.429 | INFO     | __main__:<module>:74 - Val batches: 14
+2025-12-13 22:57:34.429 | INFO     | __main__:<module>:76 - 
+================================================================================
+2025-12-13 22:57:34.429 | INFO     | __main__:<module>:77 - EVALUATING ON TEST SET
+2025-12-13 22:57:34.430 | INFO     | __main__:<module>:78 - ================================================================================
+
+================================================================================
+DETAILED CLASSIFICATION METRICS
+================================================================================
+
+Class                Precision    Recall       F1-Score     Accuracy     Support   
+--------------------------------------------------------------------------------
+Basophil             1.000        1.000        1.000        100.00       69        
+Eosinophil           0.905        0.959        0.931        95.88        267       
+Lymphocyte           0.970        0.982        0.976        98.19        827       
+Monocyte             0.811        0.938        0.870        93.75        192       
+Neutrophil           0.995        0.969        0.982        96.88        2117      
+--------------------------------------------------------------------------------
+
+Metric                         Value     
+---------------------------------------------
+Overall Accuracy               0.9700
+Macro Avg Precision            0.9361
+Macro Avg Recall               0.9694
+Macro Avg F1-Score             0.9516
+Weighted Avg F1-Score          0.9707
+Cohen Kappa Score              0.9475
+Matthews Correlation Coef      0.9479
+Total Samples                  3472
+================================================================================
+
+2025-12-13 22:57:55.175 | INFO     | plots:plot_confusion_matrix:211 - Confusion matrix saved to /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/confusion_matrix_test_squeezenet.png
+2025-12-13 22:58:17.753 | INFO     | plots:plot_per_class_metrics:110 - Saved: /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/per_class_metrics_test_squeezenet.png
+2025-12-13 22:58:52.835 | INFO     | __main__:<module>:97 - 
+================================================================================
+2025-12-13 22:58:52.835 | INFO     | __main__:<module>:98 - EVALUATING ON VALIDATION SET
+2025-12-13 22:58:52.835 | INFO     | __main__:<module>:99 - ================================================================================
+
+================================================================================
+DETAILED CLASSIFICATION METRICS
+================================================================================
+
+Class                Precision    Recall       F1-Score     Accuracy     Support   
+--------------------------------------------------------------------------------
+Basophil             1.000        1.000        1.000        100.00       20        
+Eosinophil           0.895        0.927        0.911        92.73        55        
+Lymphocyte           0.971        0.986        0.978        98.55        207       
+Monocyte             0.833        0.952        0.889        95.24        42        
+Neutrophil           0.994        0.974        0.984        97.42        543       
+--------------------------------------------------------------------------------
+
+Metric                         Value     
+---------------------------------------------
+Overall Accuracy               0.9735
+Macro Avg Precision            0.9388
+Macro Avg Recall               0.9679
+Macro Avg F1-Score             0.9524
+Weighted Avg F1-Score          0.9739
+Cohen Kappa Score              0.9518
+Matthews Correlation Coef      0.9521
+Total Samples                  867
+================================================================================
+
+2025-12-13 22:58:59.663 | INFO     | plots:plot_confusion_matrix:211 - Confusion matrix saved to /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/confusion_matrix_val_squeezenet.png
+
+================================================================================
+TEST vs VALIDATION COMPARISON
+================================================================================
+Metric                         Test            Validation      Difference     
+--------------------------------------------------------------------------------
+Accuracy                       0.9700          0.9735          0.0034         
+Macro F1-Score                 0.9516          0.9524          0.0008         
+Cohen Kappa                    0.9475          0.9518          0.0043         
+================================================================================
+
+✅ Test and validation performance are similar - good generalization!
+2025-12-13 22:59:06.733 | INFO     | __main__:<module>:136 - 
+✅ Evaluation complete!
+----------------------------------------------------------------
+
+
+ Model loaded from /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/models_saved/best_efficientnet_b0.pth
+2025-12-14 00:06:10.325 | INFO     | __main__:<module>:59 - Device: cuda
+2025-12-14 00:06:10.325 | INFO     | __main__:<module>:61 - Loading dataset...
+2025-12-14 00:06:10.346 | INFO     | __main__:<module>:73 - Test batches: 55
+2025-12-14 00:06:10.346 | INFO     | __main__:<module>:74 - Val batches: 14
+2025-12-14 00:06:10.346 | INFO     | __main__:<module>:76 - 
+================================================================================
+2025-12-14 00:06:10.346 | INFO     | __main__:<module>:77 - EVALUATING ON TEST SET
+2025-12-14 00:06:10.346 | INFO     | __main__:<module>:78 - ================================================================================
+
+================================================================================
+DETAILED CLASSIFICATION METRICS
+================================================================================
+
+Class                Precision    Recall       F1-Score     Accuracy     Support   
+--------------------------------------------------------------------------------
+Basophil             1.000        1.000        1.000        100.00       69        
+Eosinophil           0.808        0.963        0.879        96.25        267       
+Lymphocyte           0.983        0.971        0.977        97.10        827       
+Monocyte             0.918        0.880        0.899        88.02        192       
+Neutrophil           0.988        0.973        0.981        97.31        2117      
+--------------------------------------------------------------------------------
+
+Metric                         Value     
+---------------------------------------------
+Overall Accuracy               0.9672
+Macro Avg Precision            0.9396
+Macro Avg Recall               0.9574
+Macro Avg F1-Score             0.9470
+Weighted Avg F1-Score          0.9678
+Cohen Kappa Score              0.9422
+Matthews Correlation Coef      0.9425
+Total Samples                  3472
+================================================================================
+
+2025-12-14 00:06:31.988 | INFO     | plots:plot_confusion_matrix:211 - Confusion matrix saved to /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/confusion_matrix_test_efficientnet_b0.png
+2025-12-14 00:06:41.571 | INFO     | plots:plot_per_class_metrics:110 - Saved: /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/per_class_metrics_test_efficientnet_b0.png
+2025-12-14 00:07:04.606 | INFO     | __main__:<module>:97 - 
+================================================================================
+2025-12-14 00:07:04.606 | INFO     | __main__:<module>:98 - EVALUATING ON VALIDATION SET
+2025-12-14 00:07:04.606 | INFO     | __main__:<module>:99 - ================================================================================
+
+================================================================================
+DETAILED CLASSIFICATION METRICS
+================================================================================
+
+Class                Precision    Recall       F1-Score     Accuracy     Support   
+--------------------------------------------------------------------------------
+Basophil             1.000        1.000        1.000        100.00       20        
+Eosinophil           0.839        0.945        0.889        94.55        55        
+Lymphocyte           0.985        0.976        0.981        97.58        207       
+Monocyte             0.930        0.952        0.941        95.24        42        
+Neutrophil           0.996        0.985        0.991        98.53        543       
+--------------------------------------------------------------------------------
+
+Metric                         Value     
+---------------------------------------------
+Overall Accuracy               0.9792
+Macro Avg Precision            0.9501
+Macro Avg Recall               0.9718
+Macro Avg F1-Score             0.9603
+Weighted Avg F1-Score          0.9797
+Cohen Kappa Score              0.9621
+Matthews Correlation Coef      0.9623
+Total Samples                  867
+================================================================================
+
+2025-12-14 00:07:11.642 | INFO     | plots:plot_confusion_matrix:211 - Confusion matrix saved to /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/confusion_matrix_val_efficientnet_b0.png
+
+================================================================================
+TEST vs VALIDATION COMPARISON
+================================================================================
+Metric                         Test            Validation      Difference     
+--------------------------------------------------------------------------------
+Accuracy                       0.9672          0.9792          0.0121         
+Macro F1-Score                 0.9470          0.9603          0.0132         
+Cohen Kappa                    0.9422          0.9621          0.0200         
+================================================================================
+
+✅ Test and validation performance are similar - good generalization!
+2025-12-14 00:07:25.228 | INFO     | __main__:<module>:136 - 
+✅ Evaluation complete!
+------------------------------------------------------------------------
+
+Model loaded from /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/models_saved/best_efficientnet_b0.pth
+2025-12-14 00:06:10.325 | INFO     | __main__:<module>:59 - Device: cuda
+2025-12-14 00:06:10.325 | INFO     | __main__:<module>:61 - Loading dataset...
+2025-12-14 00:06:10.346 | INFO     | __main__:<module>:73 - Test batches: 55
+2025-12-14 00:06:10.346 | INFO     | __main__:<module>:74 - Val batches: 14
+2025-12-14 00:06:10.346 | INFO     | __main__:<module>:76 - 
+================================================================================
+2025-12-14 00:06:10.346 | INFO     | __main__:<module>:77 - EVALUATING ON TEST SET
+2025-12-14 00:06:10.346 | INFO     | __main__:<module>:78 - ================================================================================
+
+================================================================================
+DETAILED CLASSIFICATION METRICS
+================================================================================
+
+Class                Precision    Recall       F1-Score     Accuracy     Support   
+--------------------------------------------------------------------------------
+Basophil             1.000        1.000        1.000        100.00       69        
+Eosinophil           0.808        0.963        0.879        96.25        267       
+Lymphocyte           0.983        0.971        0.977        97.10        827       
+Monocyte             0.918        0.880        0.899        88.02        192       
+Neutrophil           0.988        0.973        0.981        97.31        2117      
+--------------------------------------------------------------------------------
+
+Metric                         Value     
+---------------------------------------------
+Overall Accuracy               0.9672
+Macro Avg Precision            0.9396
+Macro Avg Recall               0.9574
+Macro Avg F1-Score             0.9470
+Weighted Avg F1-Score          0.9678
+Cohen Kappa Score              0.9422
+Matthews Correlation Coef      0.9425
+Total Samples                  3472
+================================================================================
+
+2025-12-14 00:06:31.988 | INFO     | plots:plot_confusion_matrix:211 - Confusion matrix saved to /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/confusion_matrix_test_efficientnet_b0.png
+2025-12-14 00:06:41.571 | INFO     | plots:plot_per_class_metrics:110 - Saved: /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/per_class_metrics_test_efficientnet_b0.png
+2025-12-14 00:07:04.606 | INFO     | __main__:<module>:97 - 
+================================================================================
+2025-12-14 00:07:04.606 | INFO     | __main__:<module>:98 - EVALUATING ON VALIDATION SET
+2025-12-14 00:07:04.606 | INFO     | __main__:<module>:99 - ================================================================================
+
+================================================================================
+DETAILED CLASSIFICATION METRICS
+================================================================================
+
+Class                Precision    Recall       F1-Score     Accuracy     Support   
+--------------------------------------------------------------------------------
+Basophil             1.000        1.000        1.000        100.00       20        
+Eosinophil           0.839        0.945        0.889        94.55        55        
+Lymphocyte           0.985        0.976        0.981        97.58        207       
+Monocyte             0.930        0.952        0.941        95.24        42        
+Neutrophil           0.996        0.985        0.991        98.53        543       
+--------------------------------------------------------------------------------
+
+Metric                         Value     
+---------------------------------------------
+Overall Accuracy               0.9792
+Macro Avg Precision            0.9501
+Macro Avg Recall               0.9718
+Macro Avg F1-Score             0.9603
+Weighted Avg F1-Score          0.9797
+Cohen Kappa Score              0.9621
+Matthews Correlation Coef      0.9623
+Total Samples                  867
+================================================================================
+
+2025-12-14 00:07:11.642 | INFO     | plots:plot_confusion_matrix:211 - Confusion matrix saved to /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/confusion_matrix_val_efficientnet_b0.png
+
+================================================================================
+TEST vs VALIDATION COMPARISON
+================================================================================
+Metric                         Test            Validation      Difference     
+--------------------------------------------------------------------------------
+Accuracy                       0.9672          0.9792          0.0121         
+Macro F1-Score                 0.9470          0.9603          0.0132         
+Cohen Kappa                    0.9422          0.9621          0.0200         
+================================================================================
+
+✅ Test and validation performance are similar - good generalization!
+2025-12-14 00:07:25.228 | INFO     | __main__:<module>:136 - 
+✅ Evaluation complete!
+--------------------------------------------------------------------------
+
+
+2025-12-14 01:00:14.718 | INFO     | __main__:<module>:58 - Model loaded from /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/models_saved/best_mobilenet_v3_small.pth
+2025-12-14 01:00:14.719 | INFO     | __main__:<module>:59 - Device: cuda
+2025-12-14 01:00:14.719 | INFO     | __main__:<module>:61 - Loading dataset...
+2025-12-14 01:00:14.944 | INFO     | __main__:<module>:73 - Test batches: 55
+2025-12-14 01:00:14.945 | INFO     | __main__:<module>:74 - Val batches: 14
+2025-12-14 01:00:14.945 | INFO     | __main__:<module>:76 - 
+================================================================================
+2025-12-14 01:00:14.946 | INFO     | __main__:<module>:77 - EVALUATING ON TEST SET
+2025-12-14 01:00:14.946 | INFO     | __main__:<module>:78 - ================================================================================
+
+================================================================================
+DETAILED CLASSIFICATION METRICS
+================================================================================
+
+Class                Precision    Recall       F1-Score     Accuracy     Support   
+--------------------------------------------------------------------------------
+Basophil             1.000        1.000        1.000        100.00       69        
+Eosinophil           0.693        0.955        0.803        95.51        267       
+Lymphocyte           0.986        0.966        0.976        96.61        827       
+Monocyte             0.820        0.880        0.849        88.02        192       
+Neutrophil           0.989        0.943        0.965        94.28        2117      
+--------------------------------------------------------------------------------
+
+Metric                         Value     
+---------------------------------------------
+Overall Accuracy               0.9470
+Macro Avg Precision            0.8977
+Macro Avg Recall               0.9489
+Macro Avg F1-Score             0.9188
+Weighted Avg F1-Score          0.9496
+Cohen Kappa Score              0.9083
+Matthews Correlation Coef      0.9100
+Total Samples                  3472
+================================================================================
+
+2025-12-14 01:00:37.288 | INFO     | plots:plot_confusion_matrix:211 - Confusion matrix saved to /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/confusion_matrix_test_mobilenet_v3_small.png
+2025-12-14 01:00:48.815 | INFO     | plots:plot_per_class_metrics:110 - Saved: /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/per_class_metrics_test_mobilenet_v3_small.png
+2025-12-14 01:00:58.445 | INFO     | __main__:<module>:97 - 
+================================================================================
+2025-12-14 01:00:58.445 | INFO     | __main__:<module>:98 - EVALUATING ON VALIDATION SET
+2025-12-14 01:00:58.445 | INFO     | __main__:<module>:99 - ================================================================================
+
+================================================================================
+DETAILED CLASSIFICATION METRICS
+================================================================================
+
+Class                Precision    Recall       F1-Score     Accuracy     Support   
+--------------------------------------------------------------------------------
+Basophil             1.000        1.000        1.000        100.00       20        
+Eosinophil           0.696        1.000        0.821        100.00       55        
+Lymphocyte           0.995        0.976        0.985        97.58        207       
+Monocyte             0.826        0.905        0.864        90.48        42        
+Neutrophil           0.996        0.952        0.974        95.21        543       
+--------------------------------------------------------------------------------
+
+Metric                         Value     
+---------------------------------------------
+Overall Accuracy               0.9596
+Macro Avg Precision            0.9027
+Macro Avg Recall               0.9665
+Macro Avg F1-Score             0.9287
+Weighted Avg F1-Score          0.9620
+Cohen Kappa Score              0.9280
+Matthews Correlation Coef      0.9296
+Total Samples                  867
+================================================================================
+
+2025-12-14 01:01:06.562 | INFO     | plots:plot_confusion_matrix:211 - Confusion matrix saved to /home/yopparay/Desktop/jaziri/WhiteBloodCell-CNN-Classifier/plots_saved/confusion_matrix_val_mobilenet_v3_small.png
+
+================================================================================
+TEST vs VALIDATION COMPARISON
+================================================================================
+Metric                         Test            Validation      Difference     
+--------------------------------------------------------------------------------
+Accuracy                       0.9470          0.9596          0.0126         
+Macro F1-Score                 0.9188          0.9287          0.0100         
+Cohen Kappa                    0.9083          0.9280          0.0196         
+================================================================================
+
+✅ Test and validation performance are similar - good generalization!
+2025-12-14 01:01:11.407 | INFO     | __main__:<module>:136 - 
+✅ Evaluation complete!
+-------------------------------------------------------------
