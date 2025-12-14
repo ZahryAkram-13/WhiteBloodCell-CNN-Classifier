@@ -43,7 +43,7 @@ def predict_image(image_path, model_path, model_name="mobilenet_v3_small"):
     
     logger.info(f"Loading image: {image_path}")
 
-    from data.data_augmentation_transforms import ImageData
+    from src.data_augmentation_transforms import ImageData
     
     image = Image.open(image_path).convert('RGB')
     # transform = get_single_image_transform()

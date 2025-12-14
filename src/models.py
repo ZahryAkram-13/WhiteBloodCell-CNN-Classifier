@@ -9,7 +9,7 @@ import numpy as np
 
 from loguru import logger
 
-from data.data_augmentation_transforms import ImageData
+from src.data_augmentation_transforms import ImageData
 from data.utils import DATA_TRAIN_PATH, DATA_TESTA_PATH
 from paths import BEST_MODEL_DIR, MODELS_DIR, PLOTS_DIR
 

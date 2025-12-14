@@ -10,7 +10,7 @@ import torch.optim as optim
 from torchvision import models
 
 
-from data.data_augmentation_transforms import ImageData
+from src.data_augmentation_transforms import ImageData
 from data.utils import (
     DATA_TRAIN_PATH,
     DATA_TESTA_PATH,
@@ -26,7 +26,7 @@ from loguru import logger
 
 from models import CellClassifier
 from plots import plot_confusion_matrix, plot_per_class_metrics
-from data.data_augmentation_transforms import ImageData
+from src.data_augmentation_transforms import ImageData
 from data.utils import DATA_TRAIN_PATH, DATA_TESTA_PATH
 
 import matplotlib.pyplot as plt
