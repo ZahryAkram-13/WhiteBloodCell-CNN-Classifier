@@ -92,7 +92,6 @@ def load_history(filename):
 
 def plot_training_history(history, save_path=None, title="Training History"):
     
-    # Increased width for better spacing
     fig, axes = plt.subplots(1, 2, figsize=(14, 6))
     
     epochs = np.arange(1, len(history['train_loss']) + 1)
@@ -103,7 +102,6 @@ def plot_training_history(history, save_path=None, title="Training History"):
     sns.lineplot(x=epochs, y=history['val_loss'], label='Validation Loss', 
                  linewidth=2.5, marker='s', markersize=6, ax=ax1)
     
-    # Slightly smaller font sizes for subplot titles
     ax1.set_title('Training and Validation Loss', fontsize=14, fontweight='bold', pad=15)
     ax1.set_xlabel('Epoch', fontsize=12, fontweight='bold')
     ax1.set_ylabel('Loss', fontsize=12, fontweight='bold')
@@ -143,11 +141,9 @@ def plot_training_history(history, save_path=None, title="Training History"):
                 arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=0'),
                 fontsize=9, fontweight='bold')
     
-    # Main title with better positioning
     plt.suptitle(title, fontsize=16, fontweight='bold', y=1.02)
     
-    # Tight layout with more space at top for title
-    plt.tight_layout(rect=[0, 0, 1, 0.93])  # Reduced from 0.96 to 0.93
+    plt.tight_layout(rect=[0, 0, 1, 0.93]) 
     
     if save_path:
         path = PLOTS_DIR / save_path

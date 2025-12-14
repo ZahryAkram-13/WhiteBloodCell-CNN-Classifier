@@ -111,10 +111,7 @@ cython_debug/
 
 # Data directories
 data/
-data_zeped/
 */data/
-*/data_zeped/
-
 # Notebook caches and outputs
 notebooks/.ipynb_checkpoints/
 *.ipynb_checkpoints/
@@ -125,14 +122,14 @@ notebooks/.ipynb_checkpoints/
 cache/
 __pycache__/
 
-# Notebooks themselves (if you don't want to commit them)
+
 # *.ipynb
 # notebooks/
 
 # Images and media files
 *.jpg
 *.jpeg
-*.png
+#*.png
 *.gif
 *.bmp
 *.tiff
@@ -189,14 +186,14 @@ Thumbs.db
 *.h5
 *.hdf5
 *.npy
-*.npz
+#*.npz
 
 # Log files
 *.log
 logs/
 
 # Model checkpoints
-*.pth
+#*.pth
 *.pt
 *.ckpt
 checkpoints/
